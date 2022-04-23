@@ -1,0 +1,211 @@
+.about {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12.8rem 0 9.8rem 13.5rem;
+
+    @media all and (max-width: 1380px) {
+        padding-right: 13.5rem;
+    }
+
+    @media all and (max-width: 1250px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    @media all and (max-width: 1024px) {
+        flex-direction: column;
+    }
+
+    @media all and (max-width: 900px) {
+        padding: 4.5rem 1.4rem 4.8rem 1.5rem;
+    }
+
+    &__text {
+        width: 100%;
+        max-width: 49.8rem;
+        margin-right: 4rem;
+
+        @media all and (max-width: 700px) {
+            margin-right: 0;
+        }
+    }
+
+    &__title {
+        margin-bottom: 5.5rem;
+
+        @media all and (max-width: 700px) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+
+        @media all and (max-width: 1024px) {
+            margin-bottom: 7.4rem;
+        }
+    }
+
+    &__points {
+        display: flex;
+        flex-direction: column;
+
+        &:not(:first-child) {
+            margin-top: 2.4rem;
+        }
+    }
+
+    &__item {
+        display: flex;
+        width: 100%;
+        max-width: 16.1rem;
+        position: relative;
+        height: 2.4rem;
+
+        &-title {
+            font-weight: $fw-2;
+            font-size: $fs-2;
+            z-index: 2;
+        }
+    }
+
+    &__paragraph {
+        color: $mediumgrey;
+        margin-bottom: 2.2rem;
+    }
+
+    &__icon {
+        margin-left: 0.8rem;
+        z-index: 2;
+    }
+
+    &__picture {
+        width: 100%;
+        max-width: 70.5rem;
+        position: relative;
+
+        @media all and (max-width: 1380px) {
+            width: 55rem;
+            height: 42.4rem;
+        }
+
+        @media all and (max-width: 700px) {
+            max-width: 35.5rem;
+            height: 27.2rem;
+        }
+
+        @media all and (max-width: 400px) {
+            align-self: flex-end;
+            margin-right: -1.4rem;
+        }
+
+        @media all and (max-width: 350px) {
+            max-width: 30rem;
+        }
+    }
+
+    &__picture-passive {
+        width: 100%;
+        max-width: 70.5rem;
+
+        @media all and (max-width: 1380px) {
+            width: 55rem;
+        }
+
+        @media all and (max-width: 700px) {
+            max-width: 35.5rem;
+        }
+
+        @media all and (max-width: 350px) {
+            max-width: 30rem;
+        }
+    }
+
+    &__picture-active {
+        width: 100%;
+        max-width: 67.2rem;
+        position: absolute;
+        top: -3.2rem;
+        left: 3.3rem;
+
+        @media all and (max-width: 1380px) {
+            width: 51.7rem;
+        }
+
+        @media all and (max-width: 700px) {
+            width: 100%;
+            max-width: 33.9rem;
+            top: -1.6rem;
+            left: 1.6rem;
+        }
+
+        @media all and (max-width: 350px) {
+            max-width: 28.5rem;
+            top: -1.6rem;
+            left: 1.6rem;
+        }
+    }
+
+    &__play {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: -3.9rem;
+        width: 100%;
+        box-shadow: 1.6rem 1.6rem 4.8rem $darkgrey;
+        max-width: 11.6rem;
+        height: 100%;
+        max-height: 11.6rem;
+        background-color: $white;
+        border-radius: 50%;
+        transform: translateY(-50%);
+
+        @media all and (max-width: 1024px) {
+            max-width: 8rem;
+            max-height: 8rem;
+            left: 23.5rem;
+        }
+
+        @media all and (max-width: 700px) {
+            max-width: 5.8rem;
+            max-height: 5.8rem;
+            left: 15.4rem;
+        }
+
+        @media all and (max-width: 350px) {
+            left: 12.5rem;
+            top: 40%;
+        }
+    }
+
+    &__triangle {
+        margin-left: 0.4rem;
+
+        @media all and (max-width: 1024px) {
+            width: 100%;
+            max-width: 1.8rem;
+        }
+
+        @media all and (max-width: 700px) {
+            width: 100%;
+            max-width: 1.3rem;
+        }
+    }
+}
+
+.about__item-active::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0.4rem;
+    background-color: $pink;
+    width: 100%;
+    height: 0.8rem;
+    z-index: 1;
+}

@@ -1,0 +1,88 @@
+.reviews {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 7.1rem;
+    padding-bottom: 9rem;
+    position: relative;
+    z-index: 2;
+    background-color: $white;
+
+    @media all and (max-width: 1200px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    @media all and (max-width: 900px) {
+        padding: 5.4rem 1.5rem 8rem 1.4rem;
+    }
+
+    &__paragraph {
+        width: 100%;
+        max-width: 57rem;
+        text-align: center;
+        font-weight: $fw-2;
+        margin-bottom: 6.4rem;
+    }
+
+    &__row {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 9.7rem;
+        gap: 3rem;
+
+        @media all and (max-width: 1200px) {
+            gap: 1.7rem;
+        }
+
+        @media all and (max-width: 900px) {
+            margin-bottom: 7.7rem;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 37rem;
+        border-radius: 0.3rem;
+        padding: 3.2rem 3.2rem 4.8rem 3.2rem;
+        box-shadow: 1.6rem 1.6rem 4.8rem $darkgrey;
+
+        &-photo {
+            width: 100%;
+            max-width: 6.4rem;
+            margin-bottom: 1.4rem;
+            border-radius: 50%;
+        }
+
+        &-text {
+            line-height: 2.4rem;
+            margin-bottom: 1.6rem;
+            font-size: $fs-2;
+            color: $mediumgrey;
+        }
+
+        &-name {
+            font-size: $fs-2;
+            font-weight: $fw-2;
+            color: $black;
+        }
+    }
+
+    &__company {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 3rem;
+
+        &-img {
+            margin: 0 auto;
+        }
+    }
+}

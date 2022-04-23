@@ -1,0 +1,114 @@
+@import "./styles/varibless.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", "sans-serif";
+}
+
+.title,
+.subtitle,
+.header__logo {
+  color: $black;
+  font-weight: $fw-3;
+  font-family: "Poppins", "sans-serif";
+}
+
+.title {
+  font-size: $fs-9;
+  line-height: 6.4rem;
+  margin-bottom: 2.3rem;
+
+  @media all and (max-width: 900px) {
+    font-size: $fs-8;
+    line-height: 4.8rem;
+  }
+}
+
+.subtitle {
+  font-size: $fs-2;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+}
+
+.paragraph {
+  font-size: $fs-2;
+  line-height: 2.4rem;
+  color: $black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+input,
+button,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  &__content {
+    overflow: hidden;
+    width: 100%;
+    max-width: 144rem;
+  }
+}
+
+.explore,
+.about,
+.works,
+.advantages,
+.team,
+.reviews,
+.blog,
+.footer {
+  padding: 0 13.5rem;
+}
+
+.btn {
+  font-size: $fs-2;
+  width: 100%;
+  max-width: 17rem;
+  text-align: center;
+  padding: 1.2rem;
+  border-radius: 2.4rem;
+  font-weight: $fw-3;
+  border: 1px solid $lightgrey;
+  font-family: "Source Sans Pro", "sans-serif";
+}
+
+@import "./styles/explore.scss";
+@import "./styles/about.scss";
+@import "./styles/works.scss";
+@import "./styles/advantages.scss";
+@import "./styles/team.scss";
+@import "./styles/reviews.scss";
+@import "./styles/blog.scss";
+@import "./styles/end.scss";
