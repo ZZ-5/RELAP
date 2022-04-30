@@ -29,6 +29,11 @@ body {
     font-size: $fs-8;
     line-height: 4.8rem;
   }
+
+  @media all and (max-width: 340px) {
+    font-size: $fs-7;
+    line-height: 3.5rem;
+  }
 }
 
 .subtitle {
@@ -105,6 +110,8 @@ a {
 }
 
 @import "./styles/explore.scss";
+@import "./styles/header.scss";
+@import "./styles/nav.scss";
 @import "./styles/about.scss";
 @import "./styles/works.scss";
 @import "./styles/advantages.scss";
@@ -112,3 +119,5 @@ a {
 @import "./styles/reviews.scss";
 @import "./styles/blog.scss";
 @import "./styles/end.scss";
+@import "./styles/contact.scss";
+@import "./styles/footer.scss"

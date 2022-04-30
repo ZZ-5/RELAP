@@ -1,0 +1,155 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 3rem;
+
+    @media all and (max-width: 900px) {
+        background-color: $white;
+        color: $black;
+        padding: 1.6rem 1.5rem;
+    }
+
+    &__logo {
+        font-size: $fs-8;
+        color: $white;
+
+        @media all and (max-width: 900px) {
+            color: $black;
+        }
+
+        @media all and (max-width: 700px) {
+            font-size: $fs-7;
+        }
+
+        @media all and (max-width: 600px) {
+            font-size: $fs-6;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: $fs-5;
+        }
+    }
+
+    &__btn {
+        color: $white;
+        background-color: transparent;
+
+        @media all and (max-width: 900px) {
+            display: none;
+        }
+    }
+
+    &__burger {
+        @media all and (min-width: 901px) {
+            display: none;
+        }
+
+        @media all and (max-width: 900px) {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            width: 4rem;
+            height: 3rem;
+            cursor: pointer;
+
+            &-icon {
+                display: block;
+                position: relative;
+                width: 4rem;
+                height: 0.6rem;
+                background-color: $pink;
+                border: none;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 4rem;
+                    height: 0.6rem;
+                    background-color: $pink;
+                    top: -1rem;
+                    left: 0;
+                }
+
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 4rem;
+                    height: 0.6rem;
+                    background-color: $pink;
+                    top: 1rem;
+                    left: 0;
+                }
+            }
+        }
+
+        @media all and (max-width: 600px) {
+            width: 3rem;
+
+            &-icon {
+                width: 3rem;
+                height: 0.4rem;
+
+                &::before {
+                    width: 3rem;
+                    height: 0.4rem;
+                    top: -0.7rem;
+                }
+
+                &::after {
+                    width: 3rem;
+                    height: 0.4rem;
+                    top: 0.7rem;
+                }
+            }
+        }
+
+        @media all and (max-width: 500px) {
+            width: 2rem;
+            height: 1.5rem;
+
+            &-icon {
+                width: 2rem;
+                height: 0.3rem;
+
+                &::before {
+                    width: 2rem;
+                    height: 0.3rem;
+                    top: -0.6rem;
+                }
+
+                &::after {
+                    width: 2rem;
+                    height: 0.3rem;
+                    top: 0.6rem;
+                }
+            }
+        }
+
+        @media all and (max-width: 340px) {
+            width: 1.8rem;
+            height: 1.3rem;
+
+            &-icon {
+                width: 1.8rem;
+                height: 0.2rem;
+
+                &::before {
+                    width: 1.8rem;
+                    height: 0.2rem;
+                    top: -0.4rem;
+                }
+
+                &::after {
+                    width: 1.8rem;
+                    height: 0.2rem;
+                    top: 0.4rem;
+                }
+            }
+        }
+    }
+
+}

@@ -72,6 +72,18 @@
         }
     }
 
+    &__item-active::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0.4rem;
+        background-color: $pink;
+        width: 100%;
+        height: 0.8rem;
+        z-index: 1;
+    }
+
     &__paragraph {
         color: $mediumgrey;
         margin-bottom: 2.2rem;
@@ -196,16 +208,4 @@
             max-width: 1.3rem;
         }
     }
-}
-
-.about__item-active::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 0.4rem;
-    background-color: $pink;
-    width: 100%;
-    height: 0.8rem;
-    z-index: 1;
 }

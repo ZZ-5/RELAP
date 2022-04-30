@@ -52,26 +52,26 @@
         border-radius: 0.3rem;
         padding: 3.2rem 3.2rem 4.8rem 3.2rem;
         box-shadow: 1.6rem 1.6rem 4.8rem $darkgrey;
+    }
 
-        &-photo {
-            width: 100%;
-            max-width: 6.4rem;
-            margin-bottom: 1.4rem;
-            border-radius: 50%;
-        }
+    &__cards-photo {
+        width: 100%;
+        max-width: 6.4rem;
+        margin-bottom: 1.4rem;
+        border-radius: 50%;
+    }
 
-        &-text {
-            line-height: 2.4rem;
-            margin-bottom: 1.6rem;
-            font-size: $fs-2;
-            color: $mediumgrey;
-        }
+    &__cards-text {
+        line-height: 2.4rem;
+        margin-bottom: 1.6rem;
+        font-size: $fs-2;
+        color: $mediumgrey;
+    }
 
-        &-name {
-            font-size: $fs-2;
-            font-weight: $fw-2;
-            color: $black;
-        }
+    &__cards-name {
+        font-size: $fs-2;
+        font-weight: $fw-2;
+        color: $black;
     }
 
     &__company {
@@ -80,9 +80,9 @@
         width: 100%;
         flex-wrap: wrap;
         gap: 3rem;
+    }
 
-        &-img {
-            margin: 0 auto;
-        }
+    &__company-img {
+        margin: 0 auto;
     }
 }

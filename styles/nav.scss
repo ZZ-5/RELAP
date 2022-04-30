@@ -1,0 +1,22 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 41.4rem;
+
+    @media all and (max-width: 900px) {
+        display: none;
+    }
+
+
+    &__item:not(:last-child) {
+        margin-right: 2.9rem;
+    }
+
+    &__item-link {
+        color: $white;
+        font-size: $fs-2;
+        font-weight: $fw-2;
+    }
+}

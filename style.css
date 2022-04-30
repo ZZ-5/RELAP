@@ -29,6 +29,12 @@ body {
     line-height: 4.8rem;
   }
 }
+@media all and (max-width: 340px) {
+  .title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
 
 .subtitle {
   font-size: 1.6rem;
@@ -211,6 +217,13 @@ a {
   .explore__title {
     font-size: 5.6rem;
     margin-bottom: 2.3rem;
+  }
+}
+@media all and (max-width: 340px) {
+  .explore__title {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 5rem;
   }
 }
 .explore__paragraph {
@@ -415,7 +428,7 @@ a {
   .header__burger-icon::before {
     width: 3rem;
     height: 0.4rem;
-    top: -0.6rem;
+    top: -0.7rem;
   }
   .header__burger-icon::after {
     width: 3rem;
@@ -441,6 +454,26 @@ a {
     width: 2rem;
     height: 0.3rem;
     top: 0.6rem;
+  }
+}
+@media all and (max-width: 340px) {
+  .header__burger {
+    width: 1.8rem;
+    height: 1.3rem;
+  }
+  .header__burger-icon {
+    width: 1.8rem;
+    height: 0.2rem;
+  }
+  .header__burger-icon::before {
+    width: 1.8rem;
+    height: 0.2rem;
+    top: -0.4rem;
+  }
+  .header__burger-icon::after {
+    width: 1.8rem;
+    height: 0.2rem;
+    top: 0.4rem;
   }
 }
 
@@ -538,6 +571,17 @@ a {
   font-weight: 600;
   font-size: 1.6rem;
   z-index: 2;
+}
+.about__item-active::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0.4rem;
+  background-color: #c86dd7;
+  width: 100%;
+  height: 0.8rem;
+  z-index: 1;
 }
 .about__paragraph {
   color: rgba(51, 51, 51, 0.5);
@@ -671,18 +715,6 @@ a {
     width: 100%;
     max-width: 1.3rem;
   }
-}
-
-.about__item-active::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0.4rem;
-  background-color: #c86dd7;
-  width: 100%;
-  height: 0.8rem;
-  z-index: 1;
 }
 
 .works {
@@ -1448,14 +1480,19 @@ a {
   .footer__column {
     width: 17rem;
   }
+  .footer__column:not(:last-child) {
+    margin-bottom: 4rem;
+  }
 }
 .footer__column-title {
   margin-bottom: 0.8rem;
   font-weight: 600;
   color: #333333;
+  max-width: fit-content;
 }
 .footer__column-link {
   color: rgba(51, 51, 51, 0.5);
+  max-width: fit-content;
 }
 .footer__column-link:not(:last-child) {
   margin-bottom: 0.8rem;
@@ -1480,12 +1517,6 @@ a {
 }
 .footer__social-link:last-child {
   margin-right: 0;
-}
-
-@media all and (max-width: 450px) {
-  .footer__column:not(:last-child) {
-    margin-bottom: 4rem;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
